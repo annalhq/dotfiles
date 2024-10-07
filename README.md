@@ -1,7 +1,27 @@
-# My Arch dotfiles
-![241008_00h28m27s_screenshot](https://github.com/user-attachments/assets/462cc1a5-d794-41be-91fc-412116b2d632)
+# Annalhq's Dotfiles
 
-- [x] zsh
-- [x] kitty configs
-- [x] hyprland
-- [x] nvim  
+![GitHub last commit](https://img.shields.io/github/last-commit/Annalhq/dotfiles)
+![GitHub repo size](https://img.shields.io/github/repo-size/Annalhq/dotfiles)
+![GitHub license](https://img.shields.io/github/license/Annalhq/dotfiles)
+
+## Features
+- [x] **zsh** 
+- [x] **kitty configs**  
+- [x] **hyprland**
+- [x] **nvim**
+
+## Installation
+
+To get started with these dotfiles, clone the repository and run the setup script:
+
+```sh
+git clone https://github.com/Annalhq/dotfiles.git
+
+cd dotfiles
+
+./install.sh
+```
+
+## Screenshots
+
+![Screenshot](https://github.com/user-attachments/assets/462cc1a5-d794-41be-91fc-412116b2d632)
