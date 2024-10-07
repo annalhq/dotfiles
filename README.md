@@ -1,8 +1,8 @@
 # Annalhq's Dotfiles
 
-![GitHub last commit](https://img.shields.io/github/last-commit/Annalhq/dotfiles)
-![GitHub repo size](https://img.shields.io/github/repo-size/Annalhq/dotfiles)
-![GitHub license](https://img.shields.io/github/license/Annalhq/dotfiles)
+![GitHub last commit](https://img.shields.io/github/last-commit/annalhq/dotfiles)
+![GitHub repo size](https://img.shields.io/github/repo-size/annalhq/dotfiles)
+![GitHub license](https://img.shields.io/github/license/annalhq/dotfiles)
 
 ## Features
 - [x] **zsh** 
