@@ -61,7 +61,9 @@
         "/home/ann/.local/share/waybar/modules/pulseaudio.jsonc",
         "/home/ann/.local/share/waybar/modules/tray.jsonc",
         "/home/ann/.local/share/waybar/modules/wlr-taskbar#windows.jsonc",
-        "/home/ann/.local/share/waybar/modules/wlr-taskbar.jsonc"
+        "/home/ann/.local/share/waybar/modules/wlr-taskbar.jsonc",
+        "/home/ann/.local/share/waybar/modules/group-hide-tray.jsonc",
+        "/home/ann/.local/share/waybar/modules/temperature.jsonc"
     ],
     "image#wallpaper": {
         "size": 30,

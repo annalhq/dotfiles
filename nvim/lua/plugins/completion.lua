@@ -1,13 +1,9 @@
 return {
-  {
-    "LazyVim/LazyVim",
-    opts = {
-      colorscheme = function()
-        require("catppuccin").load()
-      end,
-    },
-  },
-
+  { "LazyVim/LazyVim", opts = {
+    colorscheme = function()
+      require("catppuccin").load()
+    end,
+  } },
   {
     "catppuccin/nvim",
     name = "catppuccin",
@@ -16,7 +12,6 @@ return {
       no_italic = true,
       term_colors = true,
       transparent_background = false,
-
       styles = {
         comments = {},
         conditionals = {},
@@ -30,38 +25,15 @@ return {
         properties = {},
         types = {},
       },
-
-      color_overrides = {
-        mocha = {
-          base = "#11111b",
-          mantle = "#11111b",
-          crust = "#000000",
-        },
-      },
-
+      color_overrides = { mocha = { base = "#11111b", mantle = "#11111b", crust = "#000000" } },
       integrations = {
-        telescope = {
-          enabled = true,
-          style = "nvchad",
-        },
-        dropbar = {
-          enabled = true,
-          color_mode = true,
-        },
+        telescope = { enabled = true, style = "nvchad" },
+        dropbar = { enabled = true, color_mode = true },
         treesitter = true,
         treesitter_context = true,
       },
-
-      -- ✨ FloatBorder added here
-      custom_highlights = function(colors)
-        return {
-          FloatBorder = { bg = colors.mantle },
-        }
-      end,
     },
   },
-
-  -- Bufferline override to fix Catppuccin integration
   {
     "catppuccin/nvim",
     opts = function(_, opts)
