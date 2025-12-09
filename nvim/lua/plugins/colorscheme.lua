@@ -52,7 +52,6 @@ return {
         treesitter_context = true,
       },
 
-      -- ✨ FloatBorder added here
       custom_highlights = function(colors)
         return {
           FloatBorder = { bg = colors.mantle },
@@ -60,16 +59,13 @@ return {
       end,
     },
   },
-
-  -- Bufferline override to fix Catppuccin integration
   {
-    "catppuccin/nvim",
-    opts = function(_, opts)
-      local module = require("catppuccin.groups.integrations.bufferline")
-      if module then
-        module.get = module.get_theme
+    "akinsho/bufferline.nvim",
+    init = function()
+      local bufline = require("catppuccin.groups.integrations.bufferline")
+      function bufline.get()
+        return bufline.get_theme()
       end
-      return opts
     end,
   },
 }
