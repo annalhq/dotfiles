@@ -10,26 +10,12 @@ return {
 
   {
     "catppuccin/nvim",
+    lazy = true,
     name = "catppuccin",
-    priority = 1000,
     opts = {
       no_italic = true,
       term_colors = true,
       transparent_background = false,
-
-      styles = {
-        comments = {},
-        conditionals = {},
-        loops = {},
-        functions = {},
-        keywords = {},
-        strings = {},
-        variables = {},
-        numbers = {},
-        booleans = {},
-        properties = {},
-        types = {},
-      },
 
       color_overrides = {
         mocha = {
@@ -41,16 +27,25 @@ return {
 
       integrations = {
         bufferline = true,
-        telescope = {
-          enabled = true,
-          style = "nvchad",
-        },
+        cmp = true,
+        dashboard = true,
         dropbar = {
           enabled = true,
           color_mode = true,
         },
-        treesitter = true,
+        fzf = true,
+        indent_blankline = { enabled = true },
+        lsp_trouble = true,
+        mason = true,
+        noice = true,
+        notify = true,
+        snacks = true,
+        telescope = {
+          enabled = true,
+          style = "nvchad",
+        },
         treesitter_context = true,
+        which_key = true,
       },
 
       custom_highlights = function(colors)
@@ -59,8 +54,16 @@ return {
         }
       end,
     },
-  },
-  {
-    "akinsho/bufferline.nvim",
+    specs = {
+      {
+        "akinsho/bufferline.nvim",
+        optional = true,
+        opts = function(_, opts)
+          if (vim.g.colors_name or ""):find("catppuccin") then
+            opts.highlights = require("catppuccin.special.bufferline").get_theme()
+          end
+        end,
+      },
+    },
   },
 }
