@@ -49,6 +49,7 @@ zstyle ':completion:*' menu no
 
 # aliases
 alias ls='ls --color'
+alias v='nvim'
 
 # shell integration
 eval "$(fzf --zsh)"
