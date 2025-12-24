@@ -1,11 +1,13 @@
 return {
   {
     "mason-org/mason.nvim",
+    event = "BufReadPre",
     opts = {},
   },
 
   {
     "mason-org/mason-lspconfig.nvim",
+    event = "BufReadPre",
     dependencies = {
       "mason-org/mason.nvim",
       "neovim/nvim-lspconfig",
@@ -45,7 +47,6 @@ return {
     config = function(_, opts)
       require("mason-lspconfig").setup(opts)
 
-      -- Keymaps
       local map = vim.keymap.set
       map("n", "K", vim.lsp.buf.hover, { desc = "LSP Hover" })
       map("n", "gd", vim.lsp.buf.definition, { desc = "LSP Definition" })
@@ -57,6 +58,6 @@ return {
 
   {
     "neovim/nvim-lspconfig",
-    lazy = true, -- loaded as dependency
+    lazy = true,
   },
 }
