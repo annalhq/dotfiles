@@ -34,7 +34,7 @@ return {
 
       return {
         ensure_installed = { "clangd", "lua_ls", "pyright" },
-        automatic_installation = true,
+        automatic_installation = false,
         handlers = {
           function(server_name)
             local server_opts = servers[server_name] or {}
