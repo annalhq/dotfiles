@@ -2,46 +2,37 @@ return {
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "gruvbox",
+      colorscheme = "gruvbox-material",
     },
   },
 
   {
-    "ellisonleao/gruvbox.nvim",
-    priority = 1000,
+    "sainnhe/gruvbox-material",
     lazy = false,
-    opts = {
-      terminal_colors = true,
-      undercurl = true,
-      underline = true,
-      bold = true,
-      strikethrough = true,
+    priority = 1000,
+    config = function()
+      -- ===== Core style =====
+      vim.g.gruvbox_material_background = "hard" -- hard | medium | soft
+      vim.g.gruvbox_material_foreground = "material"
+      vim.g.gruvbox_material_better_performance = 1
 
-      italic = {
-        strings = true,
-        emphasis = true,
-        comments = true,
-        operators = false,
-        folds = true,
-      },
+      -- ===== Text styling =====
+      vim.g.gruvbox_material_enable_italic = 1
+      vim.g.gruvbox_material_enable_bold = 1
+      vim.g.gruvbox_material_cursor = "auto"
 
-      invert_selection = false,
-      invert_signs = false,
-      invert_tabline = false,
-      inverse = true,
+      -- ===== UI contrast & polish =====
+      vim.g.gruvbox_material_ui_contrast = "high"
+      vim.g.gruvbox_material_statusline_style = "material"
+      vim.g.gruvbox_material_menu_selection_background = "orange"
 
-      contrast = "hard",
-      dim_inactive = false,
-      transparent_mode = false,
+      -- ===== Diagnostics =====
+      vim.g.gruvbox_material_diagnostic_text_highlight = 1
+      vim.g.gruvbox_material_diagnostic_line_highlight = 1
+      vim.g.gruvbox_material_diagnostic_virtual_text = "colored"
 
-      palette_overrides = {},
-      overrides = {
-        FloatBorder = { bg = "#282828" },
-      },
-    },
-    config = function(_, opts)
-      require("gruvbox").setup(opts)
-      vim.cmd.colorscheme("gruvbox")
+      -- ===== Load =====
+      vim.cmd.colorscheme("gruvbox-material")
     end,
   },
 }
