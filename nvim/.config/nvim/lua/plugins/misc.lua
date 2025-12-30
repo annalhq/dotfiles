@@ -15,13 +15,6 @@ return {
     },
   },
 
-  -- Lualine
-  {
-    "nvim-lualine/lualine.nvim",
-    event = "VeryLazy",
-    opts = {},
-  },
-
   -- Mason
   {
     "mason-org/mason.nvim",

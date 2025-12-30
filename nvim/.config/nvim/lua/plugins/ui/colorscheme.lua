@@ -23,8 +23,9 @@ return {
 
       -- UI contrast
       vim.g.gruvbox_material_ui_contrast = "high"
-      vim.g.gruvbox_material_statusline_style = "material"
-      vim.g.gruvbox_material_menu_selection_background = "orange"
+      vim.g.gruvbox_material_statusline_style = "mix"
+      vim.g.gruvbox_material_transparent_background = 0
+      vim.g.gruvbox_material_menu_selection_background = "none"
 
       -- Diagnostics
       vim.g.gruvbox_material_diagnostic_text_highlight = 1
