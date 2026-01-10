@@ -49,7 +49,7 @@ function M.setup()
 
   lualine.setup({
     options = {
-      theme = "gruvbox-material",
+      theme = "gruvbox-material", -- TODO: integrate gruvchad statusline theme
       globalstatus = true,
       section_separators = "",
       component_separators = "",
@@ -59,7 +59,9 @@ function M.setup()
     },
     sections = {
       lualine_a = { "mode" },
-      lualine_b = {},
+      lualine_b = {
+        { "branch", icon = "" },
+      },
       lualine_c = { "filename" },
       lualine_x = {
         diff,
