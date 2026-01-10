@@ -54,7 +54,7 @@ function M.setup()
       section_separators = "",
       component_separators = "",
       disabled_filetypes = {
-        statusline = { "lazy", "mason", "NvimTree" },
+        statusline = { "alpha", "lazy", "mason", "NvimTree" },
       },
     },
     sections = {
@@ -73,4 +73,3 @@ function M.setup()
 end
 
 return M
-
