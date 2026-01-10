@@ -4,7 +4,7 @@ return {
     event = "VeryLazy",
     dependencies = { "nvim-tree/nvim-web-devicons" },
     config = function()
-      require("plugins.ui.statusline").setup()
+      require("config.statusline").setup()
     end,
   },
 }

@@ -2,7 +2,7 @@ local M = {}
 
 function M.setup()
   local lualine = require("lualine")
-  local icon = require("plugins.ann.icons")
+  local icon = require("config.icons")
 
   local diagnostics = {
     "diagnostics",
