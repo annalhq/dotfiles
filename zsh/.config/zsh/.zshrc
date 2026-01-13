@@ -71,3 +71,4 @@ function nvims() {
   NVIM_APPNAME=$config nvim $@
 }
 
+bindkey -v
