@@ -412,7 +412,7 @@
       "squareCorners": true,
       "noBackground": false,
       "gothCornersEnabled": true,
-      "gothCornerRadiusOverride": true,
+      "gothCornerRadiusOverride": false,
       "gothCornerRadiusValue": 12,
       "borderEnabled": false,
       "borderColor": "surfaceText",
@@ -429,7 +429,7 @@
       "visible": true,
       "popupGapsAuto": true,
       "popupGapsManual": 4,
-      "maximizeDetection": false,
+      "maximizeDetection": true,
       "shadowColorMode": "text"
     }
   ],
