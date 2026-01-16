@@ -129,7 +129,8 @@ windowrulev2 = float, class:^(zoom)$
 # DMS windows floating by default
 windowrulev2 = float, class:^(org.quickshell)$
 #windowrulev2 = opacity 0.9 0.9, floating:0, focus:0
-#layerrule = noanim, ^(quickshell)$
+
+layerrule = noanim, ^(quickshell)$
 
 # ==================
 # KEYBINDINGS
@@ -304,6 +305,3 @@ debug {
 }
 
 source = ./dms/cursor.conf
-
-source = ./dms/outputs.conf
-source = ./dms/binds.conf
