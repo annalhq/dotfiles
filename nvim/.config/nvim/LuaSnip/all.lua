@@ -19,6 +19,7 @@ return {
       "#define vin(name,len) vector<int> name(len); for (auto &_ : name) cin >> _;",
       "#define vinl(name,len) vector<long long> name(len); for (auto &_ : name) cin >> _;",
       '#define vout(v) for (auto _ : v) cout << _ <<  " "; cout << endl;',
+      '#define debug(x) cout << (#x) << " is " << (x) << endl',
       "",
       "/* -------enso-note--------",
       " *",
