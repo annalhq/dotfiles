@@ -1,9 +1,16 @@
 {
-  "currentThemeName": "dynamic",
-  "currentThemeCategory": "generic",
-  "customThemeFile": "",
-  "registryThemeVariants": {},
-  "matugenScheme": "scheme-tonal-spot",
+  "currentThemeName": "custom",
+  "currentThemeCategory": "registry",
+  "customThemeFile": "/home/ann/.config/DankMaterialShell/themes/amoledBlack/theme.json",
+  "registryThemeVariants": {
+    "gruvboxMaterial": "soft",
+    "petrichor": "pink",
+    "amoledBlack": {
+      "flavor": "black",
+      "accent": "white"
+    }
+  },
+  "matugenScheme": "scheme-content",
   "runUserMatugenTemplates": true,
   "matugenTargetMonitor": "",
   "popupTransparency": 1,
@@ -101,14 +108,14 @@
       "width": 50
     },
     {
-      "id": "darkMode",
+      "id": "idleInhibitor",
       "enabled": true,
       "width": 50
     },
     {
       "id": "builtin_vpn",
       "enabled": true,
-      "width": 50
+      "width": 25
     }
   ],
   "showWorkspaceIndex": true,
@@ -419,10 +426,10 @@
         }
       ],
       "spacing": 0,
-      "innerPadding": 5,
+      "innerPadding": 4,
       "bottomGap": 0,
       "transparency": 1,
-      "widgetTransparency": 1,
+      "widgetTransparency": 0.86,
       "squareCorners": true,
       "noBackground": false,
       "gothCornersEnabled": true,
