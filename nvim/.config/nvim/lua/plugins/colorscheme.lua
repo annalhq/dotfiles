@@ -28,8 +28,6 @@ return {
       vim.g.gruvbox_material_menu_selection_background = "none"
 
       -- Diagnostics
-      vim.g.gruvbox_material_diagnostic_text_highlight = 1
-      vim.g.gruvbox_material_diagnostic_line_highlight = 1
       vim.g.gruvbox_material_diagnostic_virtual_text = "colored"
 
       local configuration = vim.fn["gruvbox_material#get_configuration"]()
