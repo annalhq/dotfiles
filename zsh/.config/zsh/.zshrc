@@ -72,3 +72,5 @@ function nvims() {
 }
 
 bindkey -v
+
+. "$HOME/.local/bin/env"
