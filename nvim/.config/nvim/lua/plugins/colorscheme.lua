@@ -15,12 +15,10 @@ return {
       vim.g.gruvbox_material_background = "hard"
       vim.g.gruvbox_material_foreground = "material"
       vim.g.gruvbox_material_better_performance = 1
-
       -- Text styling
       vim.g.gruvbox_material_enable_italic = 1
       vim.g.gruvbox_material_enable_bold = 1
       vim.g.gruvbox_material_cursor = "auto"
-
       -- UI contrast
       vim.g.gruvbox_material_ui_contrast = "high"
       vim.g.gruvbox_material_statusline_style = "mix"
@@ -47,6 +45,10 @@ return {
 
           hl(0, "CmpGhostText", { link = "Comment", default = true })
           hl(0, "CmpItemAbbrDeprecated", { fg = palette.grey0[1], bg = "NONE", strikethrough = true })
+
+          hl(0, "ErrorMsg", { fg = palette.red[1], bg = "NONE", underline = false })
+          hl(0, "NoiceNotification", { fg = palette.red[1], bg = "NONE", underline = false })
+          hl(0, "NoiceNotificationBody", { fg = palette.fg0[1], bg = "NONE" })
         end,
       })
       vim.cmd.colorscheme("gruvbox-material")
