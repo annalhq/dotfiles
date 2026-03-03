@@ -516,7 +516,8 @@
       "maximizeDetection": false,
       "shadowColorMode": "text",
       "shadowIntensity": 0,
-      "shadowOpacity": 43
+      "shadowOpacity": 43,
+      "clickThrough": false
     }
   ],
   "desktopClockEnabled": false,
