@@ -59,7 +59,7 @@ alias nvim-lazy="NVIM_APPNAME=LazyVim nvim"
 alias nvim-chad="NVIM_APPNAME=NvChad nvim"
 alias nvim-experi="NVIM_APPNAME=Experi nvim"
 
-function nvims() {
+function ann() {
   items=("default" "NvChad" "Experi")
   config=$(printf "%s\n" "${items[@]}" | fzf --prompt=" Neovim Config  " --height=~50% --layout=reverse --border --exit-0)
   if [[ -z $config ]]; then
