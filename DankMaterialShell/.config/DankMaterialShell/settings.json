@@ -10,7 +10,7 @@
       "accent": "white"
     }
   },
-  "matugenScheme": "scheme-tonal-spot",
+  "matugenScheme": "scheme-content",
   "runUserMatugenTemplates": true,
   "matugenTargetMonitor": "",
   "popupTransparency": 1,
@@ -223,7 +223,7 @@
   "dankLauncherV2UnloadOnClose": false,
   "useAutoLocation": false,
   "weatherEnabled": false,
-  "networkPreference": "wifi",
+  "networkPreference": "ethernet",
   "iconTheme": "Gruvbox-Plus-Dark",
   "cursorSettings": {
     "theme": "Bibata-Modern-Classic-Gruvbox",
@@ -252,7 +252,7 @@
   "monoFontFamily": "Fira Code",
   "fontWeight": 400,
   "fontScale": 1,
-  "notepadUseMonospace": true,
+  "notepadUseMonospace": false,
   "notepadFontFamily": "",
   "notepadFontSize": 19,
   "notepadShowLineNumbers": true,
@@ -517,7 +517,8 @@
       "shadowColorMode": "text",
       "shadowIntensity": 0,
       "shadowOpacity": 43,
-      "clickThrough": false
+      "clickThrough": false,
+      "removeWidgetPadding": false
     }
   ],
   "desktopClockEnabled": false,
