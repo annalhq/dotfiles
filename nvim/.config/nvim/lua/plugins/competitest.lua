@@ -6,7 +6,10 @@ return {
       require("competitest").setup({
         testcases_use_single_file = true,
         remove_compiled_binary = true,
-        filename_strategy = "url"
+        filename_strategy = "url",
+        git = {
+          enabled = true,
+        },
       })
     end,
   },

@@ -5,5 +5,10 @@ return {
     "nvim-lua/plenary.nvim",
     "MunifTanjim/nui.nvim",
   },
-  opts = {},
+  opts = {
+    storage = {
+      home = vim.fn.expand("~/oicp/lc"),
+    },
+    lang = "cpp",
+  },
 }
