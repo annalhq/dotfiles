@@ -20,14 +20,6 @@ return {
       local servers = {
         clangd = {
           cmd = { "clangd", "--background-index" },
-          settings = {
-            clangd = {
-              InlayHints = {
-                ParameterNames = false,
-                DeducedTypes = true,
-              },
-            },
-          },
         },
         lua_ls = {
           settings = {
