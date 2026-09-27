@@ -10,7 +10,8 @@ return {
     "sainnhe/gruvbox-material",
     lazy = false,
     priority = 1000,
-    config = function()
+    -- globals and the override autocmd must exist before LazyVim runs `:colorscheme`
+    init = function()
       -- Core style
       vim.g.gruvbox_material_background = "hard"
       vim.g.gruvbox_material_foreground = "material"
@@ -23,26 +24,31 @@ return {
       vim.g.gruvbox_material_ui_contrast = "high"
       vim.g.gruvbox_material_statusline_style = "mix"
       vim.g.gruvbox_material_transparent_background = 0
-      vim.g.gruvbox_material_menu_selection_background = "none"
+      -- must be a palette colour; "none" gives PmenuSel no bg and a bg-coloured fg
+      -- (invisible selection). PmenuSel is overridden below instead.
+      vim.g.gruvbox_material_menu_selection_background = "grey"
 
       -- Diagnostics
       vim.g.gruvbox_material_diagnostic_virtual_text = "colored"
-
-      local configuration = vim.fn["gruvbox_material#get_configuration"]()
-      local palette = vim.fn["gruvbox_material#get_palette"](
-        configuration.background,
-        configuration.foreground,
-        configuration.colors_override
-      )
 
       vim.api.nvim_create_autocmd("ColorScheme", {
         group = vim.api.nvim_create_augroup("gruvbox_material_custom", { clear = true }),
         pattern = "gruvbox-material",
         callback = function()
+          -- recompute on every load so background/option changes are picked up
+          local configuration = vim.fn["gruvbox_material#get_configuration"]()
+          local palette = vim.fn["gruvbox_material#get_palette"](
+            configuration.background,
+            configuration.foreground,
+            configuration.colors_override
+          )
+
           local hl = vim.api.nvim_set_hl
           hl(0, "FloatBorder", { fg = palette.grey0[1], bg = palette.bg0[1] })
           hl(0, "NormalFloat", { bg = palette.bg0[1] })
 
+          -- subtle selection bar instead of the loud grey block
+          hl(0, "PmenuSel", { bg = palette.bg3[1], bold = true })
           hl(0, "CmpGhostText", { link = "Comment", default = true })
           hl(0, "CmpItemAbbrDeprecated", { fg = palette.grey0[1], bg = "NONE", strikethrough = true })
 
@@ -51,7 +57,6 @@ return {
           hl(0, "NoiceNotificationBody", { fg = palette.fg0[1], bg = "NONE" })
         end,
       })
-      vim.cmd.colorscheme("gruvbox-material")
     end,
   },
 }

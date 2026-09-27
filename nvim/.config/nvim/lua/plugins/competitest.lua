@@ -2,6 +2,7 @@ return {
   {
     "annalhq/competitest.nvim",
     dependencies = "MunifTanjim/nui.nvim",
+    cmd = { "CompetiTest", "CompetiGit" },
     config = function()
       require("competitest").setup({
         testcases_use_single_file = true,

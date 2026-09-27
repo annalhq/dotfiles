@@ -14,7 +14,7 @@ return {
       require("luasnip.loaders.from_vscode").lazy_load()
 
       require("luasnip.loaders.from_lua").load({
-        paths = vim.fn.expand("~/.config/nvim/LuaSnip/"),
+        paths = vim.fn.stdpath("config") .. "/LuaSnip",
       })
 
       ls.config.setup({

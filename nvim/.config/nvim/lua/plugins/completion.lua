@@ -1,5 +1,6 @@
 return {
-  { "hrsh7th/cmp-nvim-lsp" },
+  -- LuaSnip is used for snippets; the nvim-cmp extra's nvim-snippets is redundant
+  { "garymjr/nvim-snippets", enabled = false },
 
   {
     "hrsh7th/nvim-cmp",
