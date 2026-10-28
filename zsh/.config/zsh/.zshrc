@@ -60,7 +60,7 @@ alias nvim-chad="NVIM_APPNAME=NvChad nvim"
 alias nvim-experi="NVIM_APPNAME=Experi nvim"
 
 function ann() {
-  items=("default" "NvChad" "Experi" "Exper")
+  items=("default" "NvChad" "Experi")
   config=$(printf "%s\n" "${items[@]}" | fzf --prompt=" Neovim Config  " --height=~50% --layout=reverse --border --exit-0)
   if [[ -z $config ]]; then
     echo "Nothing selected"
@@ -74,3 +74,7 @@ function ann() {
 bindkey -v
 
 . "$HOME/.local/bin/env"
+export PATH="/home/ann/.bun/bin:$PATH"
+
+# opencode
+export PATH=/home/ann/.opencode/bin:$PATH

@@ -1,3 +1,4 @@
 .zcompdump*
+.zshenv
 .zshenv*
 .config/tmux/plugins/

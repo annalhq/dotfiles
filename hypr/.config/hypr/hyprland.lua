@@ -24,6 +24,7 @@ hl.monitor({
 --env = DMS_DISABLE_MATUGEN, 1
 hl.env("QT_QPA_PLATFORMTHEME", "qt6ct")
 hl.env("XDG_MENU_PREFIX", "arch-")
+hl.env("GTK_USE_PORTAL", "1")
 
 -- ==================
 -- INPUT CONFIG
@@ -496,3 +497,4 @@ hl.on("hyprland.start", function()
     hl.exec_cmd("bash -c \"wl-paste --watch cliphist store &\"")
 end)
 
+require("dms.layout")
