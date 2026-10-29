@@ -104,9 +104,9 @@
     {
       "id": "nightMode",
       "enabled": true,
-      "w": 4,
+      "w": 2,
       "h": 1,
-      "col": 0,
+      "col": 4,
       "row": 4
     },
     {
@@ -114,7 +114,7 @@
       "enabled": true,
       "w": 4,
       "h": 1,
-      "col": 4,
+      "col": 0,
       "row": 4
     },
     {
@@ -122,8 +122,8 @@
       "enabled": true,
       "w": 2,
       "h": 1,
-      "col": 0,
-      "row": 5
+      "col": 6,
+      "row": 4
     },
     {
       "id": "edit",
@@ -131,7 +131,7 @@
       "w": 2,
       "h": 1,
       "small": false,
-      "col": 2,
+      "col": 3.5,
       "row": 5
     },
     {
@@ -141,7 +141,7 @@
       "h": 1,
       "small": true,
       "col": 0,
-      "row": 6
+      "row": 5
     }
   ],
   "centeringMode": "geometric",
@@ -222,6 +222,10 @@
           "showWorkspaceApps": false,
           "workspaceAppIconSizeOffset": 0,
           "maxWorkspaceIcons": 4
+        },
+        {
+          "id": "launcherButton",
+          "enabled": true
         }
       ],
       "centerWidgets": [
