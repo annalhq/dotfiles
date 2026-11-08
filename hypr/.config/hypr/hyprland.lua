@@ -489,3 +489,6 @@ require("dms.layout")
 require("dms.input")
 require("dms.colors")
 require("dms.windowrules")
+
+-- Render legacy XWayland apps without compositor upscaling.
+hl.config({ xwayland = { force_zero_scaling = true } })
