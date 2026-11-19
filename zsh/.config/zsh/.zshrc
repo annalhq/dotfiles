@@ -78,3 +78,7 @@ export PATH="/home/ann/.bun/bin:$PATH"
 
 # opencode
 export PATH=/home/ann/.opencode/bin:$PATH
+
+# claude code alias
+alias neo='claude'
+alias trinity='CLAUDE_CONFIG_DIR="$HOME/.claude-trinity" claude'

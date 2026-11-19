@@ -305,7 +305,8 @@
       "widgetFollowInterfaceStyle": false,
       "island": false,
       "dot": false,
-      "attachToScreenEdge": false
+      "attachToScreenEdge": false,
+      "widgetPadding": 8
     },
     {
       "id": "dot1793280302719",
@@ -415,7 +416,10 @@
       "widgetFollowInterfaceStyle": false,
       "island": false,
       "dot": true,
-      "attachToScreenEdge": false
+      "attachToScreenEdge": false,
+      "widgetPadding": 8,
+      "islandCompactThickness": 38,
+      "islandSatelliteGap": 12
     }
   ],
   "builtInPluginSettings": {
@@ -437,7 +441,7 @@
       "allowWithoutTrigger": true
     }
   },
-  "configVersion": 42,
+  "configVersion": 43,
   "radiusStrength": 50,
   "animationDuration": 0,
   "dockConfigs": [
@@ -451,6 +455,7 @@
       "showOnLastDisplay": true,
       "position": 1,
       "mode": "compact",
+      "middleClickAction": "close",
       "taskbarAlign": "center",
       "widgetExpansion": "popout",
       "iconSize": 34,
@@ -517,6 +522,9 @@
       "animatedArt": true,
       "playerStyle": "material",
       "artStyle": "square"
+    },
+    "weather": {
+      "readings": false
     }
   },
   "dmsWindowsFloatingSeeded": [
@@ -572,7 +580,7 @@
     },
     {
       "id": "weather",
-      "enabled": true
+      "enabled": false
     },
     {
       "id": "wellbeing",
@@ -586,5 +594,33 @@
   "lockScreenWallpaperPath": "/home/ann/Pictures/wallpapers/whiplash.jpg",
   "clipboardClickToPaste": false,
   "useAutoLocation": false,
-  "blurBorderOpacity": 0.35
+  "blurBorderOpacity": 0.35,
+  "wallpaperFillMode": "Fill",
+  "interfaceStyle": "classic",
+  "density": "comfortable",
+  "fixedRadius": 0,
+  "clipboardRememberTypeFilter": true,
+  "desktopWidgetInstances": [
+    {
+      "id": "dw_1794820879216_in021jwep",
+      "widgetType": "desktopClock",
+      "name": "Clock",
+      "enabled": false,
+      "config": {
+        "style": "analog",
+        "transparency": 0.8,
+        "colorMode": "primary",
+        "customColor": "#ffffff",
+        "showDate": true,
+        "showAnalogNumbers": false,
+        "showAnalogSeconds": true,
+        "displayPreferences": [
+          "all"
+        ]
+      }
+    }
+  ],
+  "enableRippleEffects": false,
+  "reduceMotion": true,
+  "dankLauncherV2BorderEnabled": false
 }
