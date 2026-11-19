@@ -49,12 +49,9 @@ return {
 
           -- subtle selection bar instead of the loud grey block
           hl(0, "PmenuSel", { bg = palette.bg3[1], bold = true })
-          hl(0, "CmpGhostText", { link = "Comment", default = true })
           hl(0, "CmpItemAbbrDeprecated", { fg = palette.grey0[1], bg = "NONE", strikethrough = true })
 
           hl(0, "ErrorMsg", { fg = palette.red[1], bg = "NONE", underline = false })
-          hl(0, "NoiceNotification", { fg = palette.red[1], bg = "NONE", underline = false })
-          hl(0, "NoiceNotificationBody", { fg = palette.fg0[1], bg = "NONE" })
         end,
       })
     end,

@@ -11,6 +11,8 @@ return {
 
       local border_opts = {
         border = "single",
+        -- default maps CursorLine to Visual; use PmenuSel so the colorscheme override applies
+        winhighlight = "Normal:Normal,FloatBorder:FloatBorder,CursorLine:PmenuSel,Search:None",
       }
 
       opts.auto_brackets = { "python", "cpp", "c", "lua" }
